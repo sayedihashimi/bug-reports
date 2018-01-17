@@ -8,12 +8,12 @@ namespace Table01
     {
         public MyTableViewController (IntPtr handle) : base (handle)
         {
-            //tableView.RegisterClassForCellReuse(typeof(UITableViewCell), "tablecell");
+            TableView.RegisterClassForCellReuse(typeof(UITableViewCell), "tablecell");
         }
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            tableView.Source = new MyTableSource();
+            TableView.Source = new MyTableSource();
         }
     }
 }

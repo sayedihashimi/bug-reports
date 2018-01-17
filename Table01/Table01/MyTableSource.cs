@@ -10,7 +10,6 @@ namespace Table01
 {
     public class MyTableSource : UITableViewSource
     {
-
         private List<string> Data = new List<string>
         {
             "one",
