@@ -7,14 +7,23 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace Table01
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("MyTableViewController")]
+    partial class MyTableViewController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITableView tableView { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (tableView != null) {
+                tableView.Dispose ();
+                tableView = null;
+            }
         }
     }
 }
