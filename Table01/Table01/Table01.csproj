@@ -63,6 +63,7 @@
     <Compile Include="AppDelegate.cs" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
+    <Compile Include="MyCell.cs" />
     <Compile Include="MyTableSource.cs" />
     <Compile Include="MyTableViewController.cs" />
     <Compile Include="MyTableViewController.designer.cs">

@@ -8,6 +8,7 @@ namespace Table01
     {
         public MyTableViewController (IntPtr handle) : base (handle)
         {
+            //tableView.RegisterClassForCellReuse(typeof(UITableViewCell), "tablecell");
         }
         public override void ViewDidLoad()
         {

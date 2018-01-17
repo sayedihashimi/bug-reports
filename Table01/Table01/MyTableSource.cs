@@ -10,6 +10,7 @@ namespace Table01
 {
     public class MyTableSource : UITableViewSource
     {
+
         private List<string> Data = new List<string>
         {
             "one",
@@ -19,20 +20,7 @@ namespace Table01
         };
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
-            /*
-             * UITableViewCell cell = tableView.DequeueReusableCell (CellIdentifier);
-            string item = TableItems[indexPath.Row];
-
-            //---- if there are no cells to reuse, create a new one
-            if (cell == null)
-            { cell = new UITableViewCell (UITableViewCellStyle.Default, CellIdentifier); }
-
-            cell.TextLabel.Text = item;
-
-            return cell;
-             */
-
-            var cell = tableView.DequeueReusableCell("tablecell");
+            var cell = tableView.DequeueReusableCell("tablecell",indexPath);
             if(cell == null)
             {
                 cell = new UITableViewCell(UITableViewCellStyle.Default, "tablecell");
@@ -46,5 +34,6 @@ namespace Table01
         {
             return Data.Count;
         }
+
     }
 }
