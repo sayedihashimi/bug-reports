@@ -17,6 +17,11 @@ namespace Refactor01
         }
         public Person(string name, string street1)
         {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new ArgumentException("message", nameof(name));
+            }
+
             Name = name;
             Street1 = street1;
         }
