@@ -27,7 +27,7 @@ namespace Refactor02
 
         public IEnumerable<string>GetAllNames(){
             return from p in contacts
-                   select p.FirstName;
+                   select p.Name;
         }
     }
 }
