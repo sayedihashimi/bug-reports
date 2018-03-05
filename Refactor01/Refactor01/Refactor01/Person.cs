@@ -25,5 +25,16 @@ namespace Refactor01
             Name = name;
             Street1 = street1;
         }
+
+        public string GetLowerCaseStreet1(){
+            if(Street1 == null){
+                return null;
+            }
+            return Street1.ToLowerInvariant();
+        }
+
+        public (string,string) GetNameAndStreet1(){
+            return (Name, Street1);
+        }
     }
 }
