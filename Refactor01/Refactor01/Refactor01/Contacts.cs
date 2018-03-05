@@ -13,5 +13,13 @@ namespace Refactor01
             Contacts.Add(new Person());
             Contacts.Add(new Person("name", "street 1"));
         }
+
+        public IList<Person>GetContacts(){
+            return Contacts;
+        }
+
+        public void AddContact(Person contact){
+            Contacts.Add(contact);
+        }
     }
 }
