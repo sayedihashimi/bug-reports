@@ -21,5 +21,6 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Person.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contacts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContactsManager.cs" />
   </ItemGroup>
 </Project>

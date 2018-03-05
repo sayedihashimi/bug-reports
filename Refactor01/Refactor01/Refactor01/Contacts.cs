@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Refactor01
 {
-    public class MyOtherClass01
+    public class Contacts
     {
         public IList<Person> Contacts = new List<Person>();
 
-        public MyOtherClass01()
+        public Contacts()
         {
             Contacts.Add(new Person());
             Contacts.Add(new Person("name", "street 1"));
