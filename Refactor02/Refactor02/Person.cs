@@ -14,8 +14,10 @@ namespace Refactor02
         {
             get; set;
         }
+        private string Lastname;
         public Person()
         {
+            Lastname = "";
         }
         public Person(string name, string street1)
         {
@@ -36,7 +38,10 @@ namespace Refactor02
             }
             return Street1.ToLowerInvariant();
         }
-
+        public string GetLastName()
+        {
+            return Lastname;
+        }
         public (string, string) GetNameAndStreet1()
         {
             return (Name, Street1);
