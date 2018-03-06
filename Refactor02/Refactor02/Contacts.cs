@@ -24,4 +24,9 @@ namespace Refactor02
             contacts.Add(contact);
         }
     }
+    public class MyClass01
+    {
+        public int MyProperty { get; set; }
+        public int MyProp2 { get; set; }
+    }
 }
