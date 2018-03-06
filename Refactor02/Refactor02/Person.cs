@@ -46,5 +46,10 @@ namespace Refactor02
         {
             return (Name, Street1);
         }
+        internal void Update(string name, string street1)
+        {
+            Name = name;
+            Street1 = street1;
+        }
     }
 }

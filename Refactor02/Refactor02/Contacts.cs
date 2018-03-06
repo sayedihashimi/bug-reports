@@ -29,6 +29,10 @@ namespace Refactor02
             return from p in contacts
                    select p.Name;
         }
+        public void Update(Person contact, string name, string street1)
+        {
+            contact.Update(name, street1);
+        }
     }
     public class MyClass01
     {
