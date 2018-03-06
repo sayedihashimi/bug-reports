@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Refactor02
 {
@@ -22,6 +23,11 @@ namespace Refactor02
         public void AddContact(Person contact)
         {
             contacts.Add(contact);
+        }
+
+        public IEnumerable<string>GetAllNames(){
+            return from p in contacts
+                   select p.Name;
         }
     }
     public class MyClass01
