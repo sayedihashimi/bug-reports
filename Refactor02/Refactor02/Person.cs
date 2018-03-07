@@ -51,6 +51,11 @@ namespace Refactor02
             Name = name;
             Street1 = street1;
         }
+        public int GetSomeInt()
+        {
+            return 1;
+            Name = "unreachable";
+        }
     }
     public class MyOtherClass{
         private string foo;
