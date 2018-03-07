@@ -36,6 +36,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Person.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contacts.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ContactManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MyAbstractClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml" />
