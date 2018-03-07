@@ -6,4 +6,5 @@ namespace Refactor02
         public abstract void UpdatePerson(Person p, string name, string street1);
         public abstract Person GetPersonByname(string name);
     }
+
 }
