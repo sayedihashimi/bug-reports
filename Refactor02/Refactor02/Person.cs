@@ -52,4 +52,11 @@ namespace Refactor02
             Street1 = street1;
         }
     }
+    public class MyOtherClass{
+        private string foo;
+        private string bar;
+
+        public string Name 
+        { get; set; }
+    }
 }
