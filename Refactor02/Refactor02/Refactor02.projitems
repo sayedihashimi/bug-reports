@@ -37,6 +37,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Contacts.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ContactManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MyAbstractClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IMyInterface.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml" />
